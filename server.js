@@ -11,7 +11,7 @@ import videosRouter from "./routes/videos.js";
 
 const app = express();
 app.use(cors({
-  origin: ["https://smart-ai.store", "https://smart-ai.store/tv"],
+  origin: ["https://smart-ai.store", "https://smart-ai.store/tv", "http://localhost:5173/tv/"],
   credentials: true,
 }));
 app.use(express.json());
