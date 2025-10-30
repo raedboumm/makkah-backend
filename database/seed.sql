@@ -16,7 +16,7 @@ INSERT OR IGNORE INTO articles (title_ar, slug, summary_ar, content_ar, image_ur
     'hajj-season-1446-launch',
     'شهدت مكة المكرمة اليوم انطلاق موسم الحج لهذا العام باستقبال أولى طلائع الحجاج',
     'شهدت مكة المكرمة اليوم انطلاق موسم الحج لعام 1446هـ باستقبال أولى طلائع الحجاج القادمين من مختلف دول العالم...',
-    'https://images.unsplash.com/photo-1591604129939-f1efa4d9f7fa?w=800&q=80',
+    'https://media.islamicity.org/wp-content/uploads/2023/04/Eid-fitr-makkah-2023.jpg',
     6,
     1,
     1
