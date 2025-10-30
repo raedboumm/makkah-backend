@@ -79,7 +79,7 @@ INSERT OR IGNORE INTO videos (title_ar, slug, description_ar, video_url, thumbna
     'surah-kahf-recitation',
     'تلاوة مؤثرة من سورة الكهف بصوت القارئ الشيخ ماهر المعيقلي',
     'https://www.youtube.com/watch?v=example1',
-    'https://images.unsplash.com/photo-1542816417-0983c9c9ad53?w=800&q=80',
+    'https://images.unsplash.com/photo-1609599006353-e629aaabfeae?w=800&q=80',
     7,
     0,
     2400
@@ -119,7 +119,7 @@ INSERT OR IGNORE INTO programs (name_ar, slug, description_ar, image_url, schedu
     'أحكام وآداب',
     'ahkam-wa-adab',
     'برنامج يجيب على الأسئلة الفقهية والأحكام الشرعية',
-    'https://images.unsplash.com/photo-1585238341710-4b8b84edf1c9?w=800&q=80',
+    'https://images.unsplash.com/photo-1609599006353-e629aaabfeae?w=800&q=80',
     'يومياً الساعة 10:00 صباحاً',
     'د. سعد الشثري',
     1
