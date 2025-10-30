@@ -69,7 +69,7 @@ INSERT OR IGNORE INTO videos (title_ar, slug, description_ar, video_url, thumbna
     'fajr-prayer-masjid-haram',
     'تسجيل لصلاة الفجر من المسجد الحرام',
     'https://www.youtube.com/watch?v=example1',
-    'https://images.unsplash.com/photo-1542816417-0983c9c9ad53?w=800&q=80',
+    'https://makkahlive.net/images/MakkahLiveCover.jpg', -- ✅ تم التبديل هنا
     3,
     0,
     1800
@@ -79,7 +79,8 @@ INSERT OR IGNORE INTO videos (title_ar, slug, description_ar, video_url, thumbna
     'surah-kahf-recitation',
     'تلاوة مؤثرة من سورة الكهف بصوت القارئ الشيخ ماهر المعيقلي',
     'https://www.youtube.com/watch?v=example1',
-    'https://makkahlive.net/images/MakkahLiveCover.jpg',
+    'https://images.unsplash.com/photo-1542816417-0983c9c9ad53?w=800&q=80',
+    7,
     0,
     2400
   ),
