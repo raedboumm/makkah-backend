@@ -119,7 +119,7 @@ INSERT OR IGNORE INTO programs (name_ar, slug, description_ar, image_url, schedu
     'أحكام وآداب',
     'ahkam-wa-adab',
     'برنامج يجيب على الأسئلة الفقهية والأحكام الشرعية',
-    'https://images.unsplash.com/photo-1609599006353-e629aaabfeae?w=800&q=80',
+    'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSimrqrKsGV2voVAruLAivp8YJEcLfnv8VPWw&s',
     'يومياً الساعة 10:00 صباحاً',
     'د. سعد الشثري',
     1
