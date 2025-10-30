@@ -64,24 +64,22 @@ INSERT OR IGNORE INTO videos (title_ar, slug, description_ar, video_url, thumbna
     1,
     0
   ),
-(
-  'صلاة الفجر من المسجد الحرام',
-  'fajr-prayer-masjid-haram',
-  'تسجيل لصلاة الفجر من المسجد الحرام',
-  'https://www.youtube.com/watch?v=example1',
-  '/images/fajr.jpg',            -- ⬅️ use your served file
-  3,
-  0,
-  1800
-),
-
+  (
+    'صلاة الفجر من المسجد الحرام',
+    'fajr-prayer-masjid-haram',
+    'تسجيل لصلاة الفجر من المسجد الحرام',
+    'https://www.youtube.com/watch?v=example1',
+    'https://images.unsplash.com/photo-1542816417-0983c9c9ad53?w=800&q=80',
+    3,
+    0,
+    1800
+  ),
   (
     'تلاوة سورة الكهف',
     'surah-kahf-recitation',
     'تلاوة مؤثرة من سورة الكهف بصوت القارئ الشيخ ماهر المعيقلي',
     'https://www.youtube.com/watch?v=example1',
-    'https://images.unsplash.com/photo-1609599006353-e629aaabfeae?w=800&q=80',
-    7,
+    'https://makkahlive.net/images/MakkahLiveCover.jpg',
     0,
     2400
   ),
