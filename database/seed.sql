@@ -64,7 +64,7 @@ INSERT OR IGNORE INTO videos (title_ar, slug, description_ar, video_url, thumbna
     4,
     1,
     0
-    , ٢٣٣٠
+    , 2330
   ),
   (
     'إرث الخليلين',
@@ -75,7 +75,7 @@ INSERT OR IGNORE INTO videos (title_ar, slug, description_ar, video_url, thumbna
     3,
     0,
     1800
-    , ١٩٨٠
+    , 1980
   ),
   (
     'هذا ديننا',
@@ -86,7 +86,7 @@ INSERT OR IGNORE INTO videos (title_ar, slug, description_ar, video_url, thumbna
     7,
     0,
     2400
-    , ١٩٨٠
+    , 1980
   ),
   (
     'أبواب السماء',
@@ -97,7 +97,7 @@ INSERT OR IGNORE INTO videos (title_ar, slug, description_ar, video_url, thumbna
     6,
     0,
     3600
-    , ١٦٥٠
+    , 1650
   ),
   (
     'حنين الأفئدة',
@@ -108,7 +108,7 @@ INSERT OR IGNORE INTO videos (title_ar, slug, description_ar, video_url, thumbna
     6,
     0,
     3600
-    , ١٤٥٧ 
+    , 1457
   );
 
 -- Insert sample programs

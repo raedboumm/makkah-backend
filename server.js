@@ -111,36 +111,6 @@ app.get("/api/articles/trending/most-viewed", (req, res) => {
 app.use("/api/articles", articlesRouter);
 app.use("/api/videos", videosRouter);
 
-// ✅ Videos with category info
-app.get("/api/videos", (req, res) => {
-  try {
-    const { limit = 12, category } = req.query;
-    const lim = Math.max(1, parseInt(limit, 10));
-
-    const where = [];
-    const params = {};
-    if (category) {
-      where.push("c.slug = @category");
-      params.category = category;
-    }
-    const whereSql = where.length ? `WHERE ${where.join(" AND ")}` : "";
-
-    const stmt = db.prepare(
-      `SELECT v.*, c.name_ar AS category_name
-       FROM videos v
-       LEFT JOIN categories c ON c.id = v.category_id
-       ${whereSql}
-       ORDER BY v.publish_date DESC
-       LIMIT @lim`
-    );
-
-    const data = stmt.all({ ...params, lim });
-    res.json({ success: true, data });
-  } catch (error) {
-    res.json({ success: false, error: error.message });
-  }
-});
-
 // ✅ Programs
 app.get("/api/programs", (req, res) => {
   try {

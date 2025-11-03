@@ -4,7 +4,18 @@ import db from "../database/db.js";
 const router = express.Router();
 
 router.get("/", (req, res) => {
-  const limit = parseInt(req.query.limit) || 8;
+  // Pagination: support ?page=1&limit=8 and optional ?category=slug
+  const page = Math.max(1, parseInt(req.query.page, 10) || 1);
+  const limit = Math.max(1, parseInt(req.query.limit, 10) || 8);
+  const offset = (page - 1) * limit;
+
+  const where = [];
+  const params = {};
+  if (req.query.category) {
+    where.push("c.slug = @category");
+    params.category = req.query.category;
+  }
+  const whereSql = where.length ? `WHERE ${where.join(" AND ")}` : "";
 
   const sql = `
     SELECT v.*, 
@@ -12,13 +23,17 @@ router.get("/", (req, res) => {
            c.icon AS category_icon
     FROM videos v
     LEFT JOIN categories c ON v.category_id = c.id
-    ORDER BY v.id DESC
-    LIMIT ?
+    ${whereSql}
+    ORDER BY v.publish_date DESC, v.id DESC
+    LIMIT @lim OFFSET @offset
   `;
 
+  const countSql = `SELECT COUNT(*) AS cnt FROM videos v LEFT JOIN categories c ON v.category_id = c.id ${whereSql}`;
+
   try {
-    const data = db.prepare(sql).all(limit);
-    res.json({ success: true, data });
+    const total = db.prepare(countSql).get(params).cnt;
+    const data = db.prepare(sql).all({ ...params, lim: limit, offset });
+    res.json({ success: true, data, pagination: { page, perPage: limit, total, totalPages: Math.max(1, Math.ceil(total / limit)) } });
   } catch (error) {
     console.error("Video API Error:", error);
     res.json({ success: false, error: error.message });
