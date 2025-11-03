@@ -55,61 +55,62 @@ INSERT OR IGNORE INTO articles (title_ar, slug, summary_ar, content_ar, image_ur
 -- Insert sample videos
 -- NOTE: include view_count so each seeded video can have an initial popularity value
 INSERT OR IGNORE INTO videos (title_ar, slug, description_ar, video_url, thumbnail_url, category_id, is_live, duration, view_count) VALUES 
-  (
-    'الآيات البينات',
-    'makkah-tv-live',
-    'تلاوة مؤثرة من القرآن الكريم',
-    'https://www.youtube.com/watch?v=9mGry50ML7Q',
-    'https://images.unsplash.com/photo-1591604129939-f1efa4d9f7fa?w=800&q=80',
-    4,
-    1,
-    0
-    , 2330
-  ),
-  (
-    'إرث الخليلين',
-    'fajr-prayer-masjid-haram',
-    'تلاوة مؤثرة من القرآن الكريم',
-    'https://www.youtube.com/watch?v=example1',
-    'https://makkahlive.net/images/MakkahLiveCover.jpg', -- ✅ تم التبديل هنا
-    3,
-    0,
-    1800
-    , 1980
-  ),
-  (
-    'هذا ديننا',
-    'surah-kahf-recitation',
-    'هذا ديننا',
-    'https://www.youtube.com/watch?v=example1',
-    'https://images.unsplash.com/photo-1542816417-0983c9c9ad53?w=800&q=80',
-    7,
-    0,
-    2400
-    , 1980
-  ),
-  (
-    'أبواب السماء',
-    'hajj-rituals-complete-guide',
-    'أبواب السماء',
-    'https://www.youtube.com/watch?v=example3',
-    'https://images.unsplash.com/photo-1591604129939-f1efa4d9f7fa?w=800&q=80',
-    6,
-    0,
-    3600
-    , 1650
-  ),
-  (
-    'حنين الأفئدة',
-    'haneen-al-afida',
-    'حنين الأفئدة',
-    'https://www.youtube.com/watch?v=example5',
-    'https://images.unsplash.com/photo-1591604129939-f1efa4d9f7fa?w=800&q=80',
-    6,
-    0,
-    3600
-    , 1457
-  );
+(
+  'الآيات البينات',
+  'makkah-tv-live',
+  'تلاوة مؤثرة من القرآن الكريم',
+  'https://www.youtube.com/watch?v=9mGry50ML7Q',
+  'https://www.edarabia.com/wp-content/uploads/2020/02/prayer-times-makkah.jpg',
+  4,
+  1,
+  0,
+  2330
+),
+(
+  'إرث الخليلين',
+  'fajr-prayer-masjid-haram',
+  'تلاوة مؤثرة من القرآن الكريم',
+  'https://www.youtube.com/watch?v=example1',
+  'https://makkahlive.net/images/MakkahLiveCover.jpg',
+  3,
+  0,
+  1800,
+  1980
+),
+(
+  'هذا ديننا',
+  'surah-kahf-recitation',
+  'برنامج ديني يقدّم دروسًا وإيمانيات بأسلوب مؤثر',
+  'https://www.youtube.com/watch?v=example1',
+  'https://images.unsplash.com/photo-1542816417-0983c9c9ad53?w=800&q=80',
+  7,
+  0,
+  2400,
+  1980
+),
+(
+  'أبواب السماء',
+  'hajj-rituals-complete-guide',
+  'أبواب السماء',
+  'https://www.youtube.com/watch?v=example3',
+  'https://i.ytimg.com/vi/iKq3DlU1Yjo/maxresdefault.jpg',
+  6,
+  0,
+  3600,
+  1650
+),
+(
+  'حنين الأفئدة',
+  'haneen-al-afida',
+  'حنين الأفئدة',
+  'https://www.youtube.com/watch?v=example5',
+  'https://images.unsplash.com/photo-1591604129939-f1efa4d9f7fa?w=800&q=80',
+  6,
+  0,
+  3600,
+  1457
+);
+
 
 -- Insert sample programs
 INSERT OR IGNORE INTO programs (name_ar, slug, description_ar, image_url, schedule_time, presenter_ar, is_active) VALUES 
