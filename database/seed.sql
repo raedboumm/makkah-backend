@@ -53,7 +53,8 @@ INSERT OR IGNORE INTO articles (title_ar, slug, summary_ar, content_ar, image_ur
   );
 
 -- Insert sample videos
-INSERT OR IGNORE INTO videos (title_ar, slug, description_ar, video_url, thumbnail_url, category_id, is_live, duration) VALUES 
+-- NOTE: include view_count so each seeded video can have an initial popularity value
+INSERT OR IGNORE INTO videos (title_ar, slug, description_ar, video_url, thumbnail_url, category_id, is_live, duration, view_count) VALUES 
   (
     'بث مباشر - قناة مكة',
     'makkah-tv-live',
@@ -63,6 +64,7 @@ INSERT OR IGNORE INTO videos (title_ar, slug, description_ar, video_url, thumbna
     4,
     1,
     0
+    , 1245
   ),
   (
     'صلاة الفجر من المسجد الحرام',
@@ -73,6 +75,7 @@ INSERT OR IGNORE INTO videos (title_ar, slug, description_ar, video_url, thumbna
     3,
     0,
     1800
+    , 893
   ),
   (
     'تلاوة سورة الكهف',
@@ -83,6 +86,7 @@ INSERT OR IGNORE INTO videos (title_ar, slug, description_ar, video_url, thumbna
     7,
     0,
     2400
+    , 432
   ),
   (
     'مناسك الحج - دليل شامل',
@@ -93,6 +97,7 @@ INSERT OR IGNORE INTO videos (title_ar, slug, description_ar, video_url, thumbna
     6,
     0,
     3600
+    , 210
   );
 
 -- Insert sample programs
