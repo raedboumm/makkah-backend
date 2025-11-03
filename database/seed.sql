@@ -107,63 +107,8 @@ INSERT OR IGNORE INTO videos (title_ar, slug, description_ar, video_url, thumbna
     'https://images.unsplash.com/photo-1591604129939-f1efa4d9f7fa?w=800&q=80',
     6,
     0,
-    3600,
-    1457
-  ),
-  (
-    'خطبة الجمعة من المسجد الحرام',
-    'friday-sermon-1',
-    'خطبة الجمعة من المسجد الحرام',
-    'https://www.youtube.com/watch?v=example4',
-    'https://t4.ftcdn.net/jpg/02/88/99/73/360_F_288997372_9frxBsraRjv0zhzFeqEJ6rbqDJVBtfYt.jpg',
-    2,
-    0,
-    4200,
-    890
-  ),
-  (
-    'برنامج مناسك - الحلقة 1',
-    'manasik-episode-1',
-    'تعرف على مناسك الحج والعمرة',
-    'https://www.youtube.com/watch?v=example5',
-    'https://images.unsplash.com/photo-1537444532052-2b5d73a0e265?w=800&q=80',
-    6,
-    0,
-    3000,
-    750
-  ),
-  (
-    'تغطية خاصة - موسم الحج',
-    'hajj-special-coverage',
-    'تغطية خاصة لموسم الحج',
-    'https://www.youtube.com/watch?v=example6',
-    'https://images.unsplash.com/photo-1604718525060-0f776929dbb2?w=800&q=80',
-    6,
-    0,
-    5400,
-    1200
-  ),
-  (
-    'في رحاب الحرمين - حلقة خاصة',
-    'fi-rehab-alharamain-special',
-    'حلقة خاصة من برنامج في رحاب الحرمين',
-    'https://www.youtube.com/watch?v=example7',
-    'https://images.unsplash.com/photo-1588422337665-ae43573c467c?w=800&q=80',
-    5,
-    0,
-    3800,
-    980
-  ),
-  (
-    'أذان المغرب من المسجد الحرام',
-    'maghrib-adhan',
-    'أذان المغرب من المسجد الحرام',
-    'https://www.youtube.com/watch?v=example8',
-    'https://images.unsplash.com/photo-1590577976322-3d2d6e2130d5?w=800&q=80',
-    1,
-    0,
-    300,
-    2500
+    3600
+    , 1457
   );
 
 -- Insert sample programs
