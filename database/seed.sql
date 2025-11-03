@@ -56,7 +56,7 @@ INSERT OR IGNORE INTO articles (title_ar, slug, summary_ar, content_ar, image_ur
 -- NOTE: include view_count so each seeded video can have an initial popularity value
 INSERT OR IGNORE INTO videos (title_ar, slug, description_ar, video_url, thumbnail_url, category_id, is_live, duration, view_count) VALUES 
   (
-    'ا1لآيات البينات',
+    'الآيات البينات',
     'makkah-tv-live',
     'تلاوة مؤثرة من القرآن الكريم',
     'https://www.youtube.com/watch?v=9mGry50ML7Q',
@@ -101,9 +101,9 @@ INSERT OR IGNORE INTO videos (title_ar, slug, description_ar, video_url, thumbna
   ),
   (
     'حنين الأفئدة',
-    'hajj-rituals-complete-guide',
+    'haneen-al-afida',
     'حنين الأفئدة',
-    'https://www.youtube.com/watch?v=example3',
+    'https://www.youtube.com/watch?v=example5',
     'https://images.unsplash.com/photo-1591604129939-f1efa4d9f7fa?w=800&q=80',
     6,
     0,
