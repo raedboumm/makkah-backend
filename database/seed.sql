@@ -56,7 +56,7 @@ INSERT OR IGNORE INTO articles (title_ar, slug, summary_ar, content_ar, image_ur
 -- NOTE: include view_count so each seeded video can have an initial popularity value
 INSERT OR IGNORE INTO videos (title_ar, slug, description_ar, video_url, thumbnail_url, category_id, is_live, duration, view_count) VALUES 
   (
-    'الآيات البينات',
+    'ا1لآيات البينات',
     'makkah-tv-live',
     'تلاوة مؤثرة من القرآن الكريم',
     'https://www.youtube.com/watch?v=9mGry50ML7Q',
