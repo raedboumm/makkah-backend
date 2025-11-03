@@ -56,48 +56,59 @@ INSERT OR IGNORE INTO articles (title_ar, slug, summary_ar, content_ar, image_ur
 -- NOTE: include view_count so each seeded video can have an initial popularity value
 INSERT OR IGNORE INTO videos (title_ar, slug, description_ar, video_url, thumbnail_url, category_id, is_live, duration, view_count) VALUES 
   (
-    'بث مباشر - قناة مكة',
+    'الآيات البينات',
     'makkah-tv-live',
-    'البث المباشر لقناة مكة على مدار الساعة',
+    'تلاوة مؤثرة من القرآن الكريم',
     'https://www.youtube.com/watch?v=9mGry50ML7Q',
     'https://images.unsplash.com/photo-1591604129939-f1efa4d9f7fa?w=800&q=80',
     4,
     1,
     0
-    , 1245
+    , ٢٣٣٠
   ),
   (
-    'صلاة الفجر من المسجد الحرام',
+    'إرث الخليلين',
     'fajr-prayer-masjid-haram',
-    'تسجيل لصلاة الفجر من المسجد الحرام',
+    'تلاوة مؤثرة من القرآن الكريم',
     'https://www.youtube.com/watch?v=example1',
     'https://makkahlive.net/images/MakkahLiveCover.jpg', -- ✅ تم التبديل هنا
     3,
     0,
     1800
-    , 893
+    , ١٩٨٠
   ),
   (
-    'تلاوة سورة الكهف',
+    'هذا ديننا',
     'surah-kahf-recitation',
-    'تلاوة مؤثرة من سورة الكهف بصوت القارئ الشيخ ماهر المعيقلي',
+    'هذا ديننا',
     'https://www.youtube.com/watch?v=example1',
     'https://images.unsplash.com/photo-1542816417-0983c9c9ad53?w=800&q=80',
     7,
     0,
     2400
-    , 432
+    , ١٩٨٠
   ),
   (
-    'مناسك الحج - دليل شامل',
+    'أبواب السماء',
     'hajj-rituals-complete-guide',
-    'شرح تفصيلي لمناسك الحج خطوة بخطوة',
+    'أبواب السماء',
     'https://www.youtube.com/watch?v=example3',
     'https://images.unsplash.com/photo-1591604129939-f1efa4d9f7fa?w=800&q=80',
     6,
     0,
     3600
-    , 210
+    , ١٦٥٠
+  ),
+  (
+    'حنين الأفئدة',
+    'hajj-rituals-complete-guide',
+    'حنين الأفئدة',
+    'https://www.youtube.com/watch?v=example3',
+    'https://images.unsplash.com/photo-1591604129939-f1efa4d9f7fa?w=800&q=80',
+    6,
+    0,
+    3600
+    , ١٤٥٧ 
   );
 
 -- Insert sample programs
