@@ -26,7 +26,7 @@ INSERT OR IGNORE INTO articles (title_ar, slug, summary_ar, content_ar, image_ur
     'friday-sermon-masjid-haram',
     'ألقى فضيلة إمام وخطيب المسجد الحرام خطبة الجمعة حول أهمية التقوى',
     'ألقى فضيلة الشيخ إمام وخطيب المسجد الحرام خطبة الجمعة...',
-    'https://images.unsplash.com/photo-1542816417-0983c9c9ad53?w=800&q=80',
+    'https://vid.alarabiya.net/images/2017/05/23/16ee67c3-3c5c-4f11-a740-dcd3e664ba5f/16ee67c3-3c5c-4f11-a740-dcd3e664ba5f_16x9_1200x676.jpg?width=801&format=jpg',
     2,
     1,
     0
