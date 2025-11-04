@@ -104,7 +104,7 @@ INSERT OR IGNORE INTO videos (title_ar, slug, description_ar, video_url, thumbna
   'haneen-al-afida',
   'الكعبة | حنين الأفئدة | قناة مكة',
   'https://www.youtube.com/watch?v=example5',
-  'https://www.youtube.com/watch?v=4pjFWdivgFI&list=PLSG0qi3h4n35YI0KEw-Voodcc2OPcRVQ-',
+  'https://www.youtube.com/watch?v=4pjFWdivgFI&list=PLSG0qi3h4n35YI0KEw-Voodcc2OPcRVQ-&index=1',
   6,
   0,
   60,
