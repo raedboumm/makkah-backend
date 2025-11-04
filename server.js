@@ -108,6 +108,25 @@ app.get("/api/articles/trending/most-viewed", (req, res) => {
   }
 });
 
+// ✅ MOST VIEWED VIDEOS
+app.get("/api/videos/trending/most-viewed", (req, res) => {
+  try {
+    const { limit = 5 } = req.query;
+    const lim = Math.max(1, parseInt(limit, 10));
+    const stmt = db.prepare(
+      `SELECT v.id, v.title_ar, v.view_count
+       FROM videos v
+       ORDER BY v.view_count DESC, v.publish_date DESC
+       LIMIT ?`
+    );
+    const data = stmt.all(lim);
+    res.json({ success: true, data });
+  } catch (error) {
+    res.json({ success: false, error: error.message });
+  }
+});
+
+
 app.use("/api/articles", articlesRouter);
 app.use("/api/videos", videosRouter);
 
