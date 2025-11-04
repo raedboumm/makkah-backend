@@ -59,7 +59,7 @@ INSERT OR IGNORE INTO videos (title_ar, slug, description_ar, video_url, thumbna
   'الآيات البينات',
   'makkah-tv-live',
   'تلاوة مؤثرة من القرآن الكريم',
-  'https://www.youtube.com/watch?v=9mGry50ML7Q',
+  'https://www.youtube.com/watch?v=P7HfGo6L8w4&list=PLSG0qi3h4n37x_XTIrlHquD-uPwYrEiUP',
   'https://www.edarabia.com/wp-content/uploads/2020/02/prayer-times-makkah.jpg',
   4,
   1,
