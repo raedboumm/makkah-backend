@@ -3,6 +3,17 @@ import db from "../database/db.js";
 
 const router = express.Router();
 
+function getYouTubeId(url = "") {
+  try {
+    const u = new URL(url);
+    if (u.hostname.includes("youtu.be")) return u.pathname.slice(1);
+    if (u.hostname.includes("youtube.com")) return u.searchParams.get("v");
+  } catch (e) {
+    // ignore
+  }
+  return null;
+}
+
 router.get("/", (req, res) => {
   // Pagination: support ?page=1&limit=8 and optional ?category=slug
   const page = Math.max(1, parseInt(req.query.page, 10) || 1);
@@ -31,9 +42,19 @@ router.get("/", (req, res) => {
   const countSql = `SELECT COUNT(*) AS cnt FROM videos v LEFT JOIN categories c ON v.category_id = c.id ${whereSql}`;
 
   try {
-    const total = db.prepare(countSql).get(params).cnt;
-    const data = db.prepare(sql).all({ ...params, lim: limit, offset });
-    res.json({ success: true, data, pagination: { page, perPage: limit, total, totalPages: Math.max(1, Math.ceil(total / limit)) } });
+      const total = db.prepare(countSql).get(params).cnt;
+      const data = db.prepare(sql).all({ ...params, lim: limit, offset });
+
+      // Prefer YouTube thumbnails for YouTube links so frontend always gets a valid thumbnail
+      for (const row of data) {
+        const yt = getYouTubeId(row.video_url);
+        if (yt) {
+          // use YouTube's HQ thumbnail
+          row.thumbnail_url = `https://img.youtube.com/vi/${yt}/hqdefault.jpg`;
+        }
+      }
+
+      res.json({ success: true, data, pagination: { page, perPage: limit, total, totalPages: Math.max(1, Math.ceil(total / limit)) } });
   } catch (error) {
     console.error("Video API Error:", error);
     res.json({ success: false, error: error.message });

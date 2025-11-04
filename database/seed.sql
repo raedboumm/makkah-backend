@@ -60,10 +60,10 @@ INSERT OR IGNORE INTO videos (title_ar, slug, description_ar, video_url, thumbna
   'makkah-tv-live',
   'تلاوة مؤثرة من القرآن الكريم',
   'https://www.youtube.com/watch?v=P7HfGo6L8w4&list=PLSG0qi3h4n37x_XTIrlHquD-uPwYrEiUP',
-  'https://www.edarabia.com/wp-content/uploads/2020/02/prayer-times-makkah.jpg',
+  'https://i.ytimg.com/vi/P7HfGo6L8w4/hqdefault.jpg?sqp=-oaymwExCOADEI4CSFryq4qpAyMIARUAAIhCGAHwAQH4Af4JgALQBYoCDAgAEAEYGiBjKGUwDw==&rs=AOn4CLCzmzDZV5yrUrBhdMxqG_jB50EFdA',
   4,
-  1,
   0,
+  60,
   2330
 ),
 (
@@ -71,7 +71,7 @@ INSERT OR IGNORE INTO videos (title_ar, slug, description_ar, video_url, thumbna
   'fajr-prayer-masjid-haram',
   'تلاوة مؤثرة من القرآن الكريم',
   'https://www.youtube.com/watch?v=example1',
-  'https://makkahlive.net/images/MakkahLiveCover.jpg',
+  'https://i.ytimg.com/vi/IzeKCRaiWsE/hqdefault.jpg?sqp=-oaymwExCOADEI4CSFryq4qpAyMIARUAAIhCGAHwAQH4Af4JgALQBYoCDAgAEAEYZSBhKFAwDw==&rs=AOn4CLDi744yczYFvT59Qq_jX-C8sJbXEQ',
   3,
   0,
   1800,
