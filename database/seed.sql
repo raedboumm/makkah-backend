@@ -58,7 +58,7 @@ INSERT OR IGNORE INTO videos (title_ar, slug, description_ar, video_url, thumbna
 (
   'الآيات البينات',
   'makkah-tv-live',
-  'تلاوة مؤثرة من القرآن الكريم',
+  'مجموعة فواصل تلقي الضوء على الآيات البينات والمعالم الهدى الباهرات',
   'https://www.youtube.com/watch?v=P7HfGo6L8w4&list=PLSG0qi3h4n37x_XTIrlHquD-uPwYrEiUP',
   'https://i.ytimg.com/vi/P7HfGo6L8w4/hqdefault.jpg?sqp=-oaymwExCOADEI4CSFryq4qpAyMIARUAAIhCGAHwAQH4Af4JgALQBYoCDAgAEAEYGiBjKGUwDw==&rs=AOn4CLCzmzDZV5yrUrBhdMxqG_jB50EFdA',
   4,
@@ -69,45 +69,45 @@ INSERT OR IGNORE INTO videos (title_ar, slug, description_ar, video_url, thumbna
 (
   'إرث الخليلين',
   'fajr-prayer-masjid-haram',
-  'تلاوة مؤثرة من القرآن الكريم',
-  'https://www.youtube.com/watch?v=example1',
+  '...مفهوم إرث الخليلين هي نقاط التلاقي التي جمعت بين خليل الله إبراهيم عليه السلام و',
+  'https://www.youtube.com/watch?v=IzeKCRaiWsE&list=PLSG0qi3h4n36R2hT9q2sNo8ukOrdDVm7V',
   'https://i.ytimg.com/vi/IzeKCRaiWsE/hqdefault.jpg?sqp=-oaymwExCOADEI4CSFryq4qpAyMIARUAAIhCGAHwAQH4Af4JgALQBYoCDAgAEAEYZSBhKFAwDw==&rs=AOn4CLDi744yczYFvT59Qq_jX-C8sJbXEQ',
   3,
   0,
-  1800,
+  660,
   1980
 ),
 (
   'هذا ديننا',
   'surah-kahf-recitation',
   'برنامج ديني يقدّم دروسًا وإيمانيات بأسلوب مؤثر',
-  'https://www.youtube.com/watch?v=example1',
+  'https://www.youtube.com/watch?v=40YvEmgkbro&list=PLSG0qi3h4n34ClJ3p47RXpoubOoZyia0X',
   'https://images.unsplash.com/photo-1542816417-0983c9c9ad53?w=800&q=80',
   7,
   0,
-  2400,
+  300,
   1980
 ),
 (
   'أبواب السماء',
   'hajj-rituals-complete-guide',
-  'أبواب السماء',
-  'https://www.youtube.com/watch?v=example3',
+  'برنامج قصصي يقدمه الأستاذ/ سلطان المجنوني',
+  'https://www.youtube.com/watch?v=e1jK26KaoqQ&list=PLSG0qi3h4n36QJy-GKk4iBAjKBOzJE4fL',
   'https://i.ytimg.com/vi/iKq3DlU1Yjo/maxresdefault.jpg',
   6,
   0,
-  3600,
+  360,
   1650
 ),
 (
   'حنين الأفئدة',
   'haneen-al-afida',
-  'حنين الأفئدة',
+  'الكعبة | حنين الأفئدة | قناة مكة',
   'https://www.youtube.com/watch?v=example5',
-  'https://images.unsplash.com/photo-1591604129939-f1efa4d9f7fa?w=800&q=80',
+  'https://www.youtube.com/watch?v=4pjFWdivgFI&list=PLSG0qi3h4n35YI0KEw-Voodcc2OPcRVQ-',
   6,
   0,
-  3600,
+  60,
   1457
 );
 
